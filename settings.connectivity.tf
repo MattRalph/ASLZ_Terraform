@@ -89,7 +89,7 @@ locals {
                 base_policy_id                = ""
                 private_ip_ranges             = []
                 threat_intelligence_mode      = ""
-                threat_intelligence_allowlist = []
+                threat_intelligence_allowlist = [] # original [], tried {} https://github.com/Azure/terraform-azurerm-caf-enterprise-scale/issues/922
                 availability_zones = {
                   zone_1 = true
                   zone_2 = true
